@@ -1,8 +1,8 @@
 import React from "react";
-import autumn2 from "./images/autumn2.jpg";
+import winter2 from "./images/winter2.jpg";
 
 import "./Background.css";
 
 export default function Background() {
-  return <img src={autumn2} alt="autumn2" className="backimage" />;
+  return <img src={winter2} alt="winter2" className="backimage" />;
 }
