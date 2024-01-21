@@ -1,0 +1,18 @@
+.inputtown {
+  border-radius: 5px;
+  background: transparent;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+  width: 50%;
+}
+
+.submitButton {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+}
+.current {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+}
