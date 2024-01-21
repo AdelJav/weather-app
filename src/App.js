@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { StrictMode } from "react";
+import "./App.css";
+
+import Background from "./Background";
+import Tempunits from "./Tempunits";
+import Townselect from "./Townselect";
+import Towndet1 from "./Towndet1";
+import Day1 from "./Day1";
+import Day2 from "./Day2";
+import Day3 from "./Day3";
+import Day4 from "./Day4";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <br />
+      <div className="card cardbody">
+        <Background />
+        <div className="card-img-overlay">
+          <Tempunits />
+          <div className="container text-center">
+            <Townselect />
+            <Towndet1 />
+            <div className="card-group groupcards">
+              <div className="card cardbody1">
+                <Day1 />
+              </div>
+              <div className="card cardbody1">
+                <Day2 />
+              </div>
+              <div className="card cardbody1">
+                <Day3 />
+              </div>
+              <div className="card cardbody1">
+                <Day4 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
     </div>
   );
 }
