@@ -1,0 +1,35 @@
+.temp4 {
+  color: #7f461b;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.day4 {
+  color: #7f461b;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.picture-day4 {
+  color: #7f461b;
+  font-size: 38px;
+}
+
+.cbody {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.details4 {
+  color: #7f461b;
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}

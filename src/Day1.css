@@ -1,0 +1,21 @@
+.picture-day1 {
+  color: #7f461b;
+  font-size: 80px;
+}
+
+.temp1 {
+  color: #7f461b;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.cardbody {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.icon1 {
+  margin-top: 10px;
+}
