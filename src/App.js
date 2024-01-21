@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import "./App.css";
 
 import Background from "./Background";
@@ -9,6 +9,7 @@ import Day1 from "./Day1";
 import Day2 from "./Day2";
 import Day3 from "./Day3";
 import Day4 from "./Day4";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
 
       <br />
     </div>
