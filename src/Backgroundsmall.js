@@ -15,7 +15,7 @@ export default function Backgroundsmall() {
       <img
         src={winter1}
         alt="winter1"
-        className=" d-block d-sm-none backimage"
+        className=" d-block d-sm-none backimagesmall"
       />
     );
   }
@@ -24,7 +24,7 @@ export default function Backgroundsmall() {
       <img
         src={spring1}
         alt="spring1"
-        className="img-fluid d-block d-sm-none backimage"
+        className="img-fluid d-block d-sm-none backimagesmall"
       />
     );
   }
@@ -33,7 +33,7 @@ export default function Backgroundsmall() {
       <img
         src={summer1}
         alt="summer1"
-        className="img-fluid d-block d-sm-none backimage"
+        className="img-fluid d-block d-sm-none backimagesmall"
       />
     );
   } else {
@@ -41,7 +41,7 @@ export default function Backgroundsmall() {
       <img
         src={autumn1}
         alt="autumn1"
-        className="img-fluid d-block d-sm-none backimage"
+        className="img-fluid d-block d-sm-none backimagesmall"
       />
     );
   }
