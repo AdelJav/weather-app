@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
 import Background from "./Background";
+import Backgroundsmall from "./Backgroundsmall";
 import Tempunits from "./Tempunits";
 import Townselect from "./Townselect";
 import Towndet1 from "./Towndet1";
@@ -18,6 +19,7 @@ function App() {
       <br />
       <div className="card cardbody">
         <Background />
+        <Backgroundsmall />
         <div className="card-img-overlay">
           <Tempunits />
           <div className="container text-center">

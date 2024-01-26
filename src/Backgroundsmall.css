@@ -1,6 +1,6 @@
 .backimage {
   opacity: 0.3;
   z-index: -1;
-  height: 409px;
-  width: 100%;
+
+  object-fit: fill;
 }
