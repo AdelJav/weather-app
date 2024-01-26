@@ -5,7 +5,6 @@ import summer2 from "./images/summer2.jpg";
 import autumn2 from "./images/autumn2.jpg";
 
 import "./Background.css";
-import { divide } from "fontawesome";
 
 export default function Background() {
   const d = new Date();
