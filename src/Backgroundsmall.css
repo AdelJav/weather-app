@@ -1,8 +1,8 @@
 .backimage {
   opacity: 0.3;
   z-index: -1;
-
-  background-repeat: repeat-x;
+  height: 1050px;
+  background-repeat: repeat;
 }
 
 .backimage2 {

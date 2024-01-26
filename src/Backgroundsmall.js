@@ -15,7 +15,7 @@ export default function Backgroundsmall() {
       <img
         src={winter1}
         alt="winter1"
-        className="img-fluid d-block d-sm-none backimage"
+        className=" d-block d-sm-none backimage"
       />
     );
   }
