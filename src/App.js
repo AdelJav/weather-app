@@ -10,7 +10,7 @@ import Day2 from "./Day2";
 import Day3 from "./Day3";
 import Day4 from "./Day4";
 import Footer from "./Footer";
-import FormatedDay from "./FormatedDay";
+import TimeInfo from "./TimeInfo";
 
 function App() {
   let [input, setInput] = useState("Town");
@@ -40,65 +40,124 @@ function App() {
     setInput(event.target.value);
   }
 
-  return (
-    <div className="container">
-      <br />
-      <div className="card cardbody">
-        <Background />
-        <Backgroundsmall />
-        <div className="card-img-overlay">
-          <div className="container text-center">
-            <form onSubmit={handleSubmit}>
-              <input
-                type="search"
-                name="Town"
-                placeholder="Select a town"
-                className="inputtown"
-                onChange={inputValue}
-              />
-              <input type="submit" value="Search" className="submitButton" />
-              <button className="current" id="current">
-                Current
-              </button>
-              <span className="tempUnits">
-                Temperature in{" "}
-                <a href="`#`" id="tempC">
-                  °C
-                </a>{" "}
-                /
-                <a href="`#`" id="tempF">
-                  °F
-                </a>
-              </span>
-            </form>
+  if (weatherData.ready) {
+    return (
+      <div className="container">
+        <br />
+        <div className="card cardbody">
+          <Background />
+          <Backgroundsmall />
+          <div className="card-img-overlay">
+            <div className="container text-center">
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="search"
+                  name="Town"
+                  placeholder="Select a town"
+                  className="inputtown"
+                  onChange={inputValue}
+                />
+                <input type="submit" value="Search" className="submitButton" />
+                <button className="current" id="current">
+                  Current
+                </button>
+                <span className="tempUnits">
+                  Temperature in{" "}
+                  <a href="`#`" id="tempC">
+                    °C
+                  </a>{" "}
+                  /
+                  <a href="`#`" id="tempF">
+                    °F
+                  </a>
+                </span>
+              </form>
 
-            <h1> {input}</h1>
-            <p className="day1" id="today">
-              <FormatedDay date={weatherData.date} />
-            </p>
-
-            <div className="card-group groupcards">
-              <div className="card cardbody1">
-                <Day1 />
-              </div>
-              <div className="card cardbody1">
-                <Day2 />
-              </div>
-              <div className="card cardbody1">
-                <Day3 />
-              </div>
-              <div className="card cardbody1">
-                <Day4 />
+              <h1> {input}</h1>
+              <TimeInfo date={weatherData.date} />
+              <div className="card-group groupcards">
+                <div className="card cardbody1">
+                  <Day1 />
+                </div>
+                <div className="card cardbody1">
+                  <Day2 />
+                </div>
+                <div className="card cardbody1">
+                  <Day3 />
+                </div>
+                <div className="card cardbody1">
+                  <Day4 />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
 
-      <br />
-    </div>
-  );
+        <br />
+      </div>
+    );
+  } else {
+    return (
+      <div className="container">
+        <br />
+        <div className="card cardbody">
+          <Background />
+          <Backgroundsmall />
+          <div className="card-img-overlay">
+            <div className="container text-center">
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="search"
+                  name="Town"
+                  placeholder="Select a town"
+                  className="inputtown"
+                  onChange={inputValue}
+                />
+                <input type="submit" value="Search" className="submitButton" />
+                <button className="current" id="current">
+                  Current
+                </button>
+                <span className="tempUnits">
+                  Temperature in{" "}
+                  <a href="`#`" id="tempC">
+                    °C
+                  </a>{" "}
+                  /
+                  <a href="`#`" id="tempF">
+                    °F
+                  </a>
+                </span>
+              </form>
+
+              <h1> {input}</h1>
+              <p className="day1" id="today">
+                Today, hour:minute
+              </p>
+
+              <div className="card-group groupcards">
+                <div className="card cardbody1">
+                  <Day1 />
+                </div>
+                <div className="card cardbody1">
+                  <Day2 />
+                </div>
+                <div className="card cardbody1">
+                  <Day3 />
+                </div>
+                <div className="card cardbody1">
+                  <Day4 />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+
+        <br />
+      </div>
+    );
+  }
 }
 
 export default App;
