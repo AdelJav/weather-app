@@ -4,7 +4,6 @@ import "./App.css";
 
 import Background from "./Background";
 import Backgroundsmall from "./Backgroundsmall";
-import Tempunits from "./Tempunits";
 import Townselect from "./Townselect";
 import Towndet1 from "./Towndet1";
 import Day1 from "./Day1";
@@ -21,7 +20,6 @@ function App() {
         <Background />
         <Backgroundsmall />
         <div className="card-img-overlay">
-          <Tempunits />
           <div className="container text-center">
             <Townselect />
             <Towndet1 />

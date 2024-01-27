@@ -1,20 +1,13 @@
 .cardbody {
   display: block;
   margin: 0 auto;
-  padding: 0;
-  width: 20%;
-}
-
-.card-img-overlay {
-  padding: 4px;
+  width: 60%;
 }
 
 .groupcards,
 .cardbody1 {
   background-color: transparent;
   border-style: none;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .cardbody1 {
@@ -22,8 +15,4 @@
   border-left-style: solid;
   border-color: #7f461b;
   border-radius: 0;
-}
-
-.container {
-  padding: 0;
 }

@@ -10,9 +10,10 @@
 
 .day3 {
   color: #7f461b;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
   margin: 0;
+  font-family: "Exo", sans-serif;
 }
 
 .picture-day3 {
@@ -21,14 +22,14 @@
 }
 
 .cbody {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
+  height: 8px;
+  padding: 0px 16px;
 }
 
 .details3 {
   color: #7f461b;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
   margin: 0;
   text-align: center;
   text-transform: capitalize;

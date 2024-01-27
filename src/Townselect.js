@@ -15,6 +15,16 @@ export default function Townselect() {
       <button className="current" id="current">
         Current
       </button>
+      <span className="tempUnits">
+        Temperature in{" "}
+        <a href="`#`" id="tempC">
+          °C
+        </a>{" "}
+        /
+        <a href="`#`" id="tempF">
+          °F
+        </a>
+      </span>
     </form>
   );
 }

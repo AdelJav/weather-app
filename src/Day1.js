@@ -12,6 +12,16 @@ export default function Day1() {
       <div className="icon1">
         <FontAwesomeIcon icon={faCloud} />
       </div>
+      <div className="card-body cbody">
+        <h5 className="card-title day1" id="day1">
+          Wednesday
+        </h5>
+        <p className="card-text details1" id="details1">
+          Mostly cloudy
+          <br />
+          Wind 19 m/s
+        </p>
+      </div>
     </div>
   );
 }

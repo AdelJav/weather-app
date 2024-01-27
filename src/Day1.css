@@ -17,5 +17,30 @@
 }
 
 .icon1 {
-  margin-top: 10px;
+  height: 100px;
+  margin-top: 30px;
+  width: 100px;
+}
+
+.day1 {
+  color: #7f461b;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 9%;
+  margin-top: -2%;
+  text-align: left;
+  font-family: "Exo", sans-serif;
+}
+
+.details1 {
+  color: #7f461b;
+  position: static;
+  font-size: 12px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
 }
