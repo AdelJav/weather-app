@@ -1,0 +1,63 @@
+.cardbody {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.groupcards,
+.cardbody1 {
+  background-color: transparent;
+  border-style: none;
+}
+
+.cardbody1 {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: #7f461b;
+  border-radius: 0;
+}
+
+h1 {
+  color: #7f461b;
+  text-align: left;
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 57px;
+  font-weight: 200;
+  line-height: 1;
+  margin: 0;
+  margin-left: 8%;
+  margin-top: -4%;
+}
+
+.inputtown {
+  border-radius: 5px;
+  background: transparent;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 44%;
+  width: 20%;
+}
+
+.submitButton {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+  font-size: 13px;
+  margin-left: 3px;
+}
+.current {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+  font-size: 13px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.tempUnits {
+  color: #7f461b;
+  font-size: 13px;
+  text-align: right;
+  margin-top: -500px;
+}

@@ -1,12 +1,12 @@
-.picture-day1 {
-  color: #7f461b;
-  font-size: 80px;
-}
-
 .temp1 {
   color: #7f461b;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 39px;
   margin: 0;
+  margin-left: 0;
+  margin-bottom: 25px;
+  position: relative;
+  top: 15%;
   text-align: center;
 }
 
@@ -14,12 +14,6 @@
   display: block;
   margin: 0 auto;
   width: 60%;
-}
-
-.icon1 {
-  height: 100px;
-  margin-top: 30px;
-  width: 100px;
 }
 
 .day1 {
@@ -43,4 +37,8 @@
   margin: 0;
   text-align: center;
   text-transform: capitalize;
+}
+
+.cardDay1 {
+  text-align: center !important;
 }

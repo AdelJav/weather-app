@@ -7,13 +7,13 @@ export default function Day1(props) {
   let temp = Math.round(props.data.temperature);
   let desc = props.data.description;
   let win = Math.round(props.data.wind);
-  //console.log(props.data.description);
+  console.log(props.data.icon);
   return (
-    <div className="picture-day1">
+    <div className="cardDay1">
       <p className="temp1">{temp}°C</p>
-      <div className="icon1">
-        <FontAwesomeIcon icon={faCloud} />
-      </div>
+
+      <img src={props.data.icon} alt="Weather icon"></img>
+
       <div className="card-body cbody">
         <p className="card-text details1">
           {desc}
