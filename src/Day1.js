@@ -1,7 +1,5 @@
 import React from "react";
 import "./Day1.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 export default function Day1(props) {
   let temp = Math.round(props.data.temperature);
