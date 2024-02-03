@@ -7,10 +7,11 @@ import Background from "./Background";
 import Backgroundsmall from "./Backgroundsmall";
 import Day1 from "./Day1";
 import Day1F from "./Day1F";
-import Day2 from "./Day2";
+//import Day2 from "./Day2";
 import Day3 from "./Day3";
 import Day4 from "./Day4";
 import TimeInfo from "./TimeInfo";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   let [input, setInput] = useState(props.defaultInput);
@@ -110,7 +111,7 @@ export default function Weather(props) {
                 <Day1 data={weatherData} />
               </div>
               <div className="card cardbody1">
-                <Day2 />
+                <Forecast data={input} />
               </div>
               <div className="card cardbody1">
                 <Day3 />
@@ -158,7 +159,7 @@ export default function Weather(props) {
                 <Day1F data={weatherDataF} />
               </div>
               <div className="card cardbody1">
-                <Day2 />
+                <Forecast data={input} />
               </div>
               <div className="card cardbody1">
                 <Day3 />

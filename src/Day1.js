@@ -5,7 +5,7 @@ export default function Day1(props) {
   let temp = Math.round(props.data.temperature);
   let desc = props.data.description;
   let win = Math.round(props.data.wind);
-  console.log(props.data.icon);
+  //console.log(props.data.icon);
   return (
     <div className="cardDay1">
       <p className="temp1">{temp}°C</p>
