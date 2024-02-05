@@ -93,9 +93,7 @@ export default function Weather(props) {
                 onChange={inputValue}
               />
               <input type="submit" value="Search" className="submitButton" />
-              <button className="current" id="current">
-                Current
-              </button>
+              <button className="current">Current</button>
               <span className="tempUnits">
                 Temperature in °C /
                 <a href="`#`" onClick={convertToFahrenheit}>
@@ -111,7 +109,7 @@ export default function Weather(props) {
                 <Day1 data={weatherData} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={input} />
+                <Forecast data={weatherData.town} />
               </div>
               <div className="card cardbody1">
                 <Day3 />
