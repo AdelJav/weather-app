@@ -14,7 +14,7 @@ export default function Forecast(props) {
 
     useEffect(() => {
       setrequestUrl(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${props.input}&cnt=3&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${input}&cnt=3&appid=${apiKey}&units=metric`
       );
       axios.get(requestUrl).then(dForecast);
     }, [requestUrl]);
