@@ -9,8 +9,8 @@ export default function Forecast(props) {
   //let [weatherDataF, setWeatherDataF] = useState({ ready: false });
 
   useEffect(() => {
-    let apiKey = "2daf65f0cdaa917f11026e8a128ce271";
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&cnt=3&appid=${apiKey}&units=metric`;
+    const apiKey = "2daf65f0cdaa917f11026e8a128ce271";
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&cnt=3&appid=${apiKey}&units=metric`;
 
     axios.get(url).then(setdForecast);
   }, [props.data]);
