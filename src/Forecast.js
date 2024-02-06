@@ -3,20 +3,25 @@ import "./Forecast.css";
 import axios from "axios";
 
 export default function Forecast(props) {
-  const apiKey = "2daf65f0cdaa917f11026e8a128ce271";
-  let input = useState(props.data);
+  console.log(props);
+
+  //const apiKey = "2daf65f0cdaa917f11026e8a128ce271";
+  //let input = useState(props.data);
   let [dataForecast, setdataForecast] = useState({ ready: false });
   //let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.input}&cnt=3&appid=${apiKey}&units=metric`;
   let [requestUrl, setrequestUrl] = useState(
     `https://api.openweathermap.org/data/2.5/forecast?q=Vienna&cnt=3&appid=2daf65f0cdaa917f11026e8a128ce271&units=metric`
   );
+  //console.log(input);
 
   useEffect(() => {
     setrequestUrl(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${input}&cnt=3&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${props.data}&cnt=3&appid=2daf65f0cdaa917f11026e8a128ce271&units=metric`
     );
     axios.get(requestUrl).then(dForecast);
-  }, [requestUrl]);
+  }, [props.data, requestUrl]);
+
+  console.log(requestUrl);
 
   function dForecast(response) {
     //console.log(response.data.list[0].weather[0].icon);
@@ -29,7 +34,7 @@ export default function Forecast(props) {
       icon: `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`,
       description: response.data.list[0].weather[0].description,
     });
-    console.log(dataForecast.icon);
+    //console.log(dataForecast.icon);
   }
 
   if (dataForecast.ready) {
