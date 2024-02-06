@@ -7,7 +7,7 @@ export default function Forecast(props) {
     const apiKey = "2daf65f0cdaa917f11026e8a128ce271";
     let input = useState(props.data);
     let [dataForecast, setdataForecast] = useState({ ready: false });
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.input}&cnt=3&appid=${apiKey}&units=metric`;
+    //let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.input}&cnt=3&appid=${apiKey}&units=metric`;
     let [requestUrl, setrequestUrl] = useState(
       `https://api.openweathermap.org/data/2.5/forecast?q=Vienna&cnt=3&appid=2daf65f0cdaa917f11026e8a128ce271&units=metric`
     );
