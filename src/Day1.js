@@ -12,7 +12,7 @@ export default function Day1(props) {
     <div className="cardDay1">
       <p className="temp1">{temp}°C</p>
 
-      <Icon code={icon} size={52} />
+      <Icon code={icon} size={75} />
 
       <div className="card-body cbody">
         <p className="card-text details1">

@@ -92,7 +92,6 @@ export default function Weather(props) {
                 onChange={inputValue}
               />
               <input type="submit" value="Search" className="submitButton" />
-              <button className="current">Current</button>
               <span className="tempUnits">
                 Temperature in °C /
                 <a href="`#`" onClick={convertToFahrenheit}>

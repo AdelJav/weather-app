@@ -59,7 +59,7 @@ export default function Forecast(props) {
       <div>
         <p className="temp2">{roundTemp}°C</p>
         <div className="picture-day2">
-          <Icon code={dataForecast.icon} size={52} />
+          <Icon code={dataForecast.icon} size={64} />
         </div>
 
         <div className="card-body cbody">

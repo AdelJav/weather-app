@@ -1,7 +1,7 @@
 .temp2 {
   color: #7f461b;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   margin: 0;
   margin-left: 0;
   margin-top: 35px;
@@ -17,8 +17,8 @@
 }
 
 .picture-day2 {
-  color: #7f461b;
-  font-size: 45px;
+  margin-top: 11px;
+  margin-bottom: 5px;
 }
 
 .cardbody {
@@ -33,4 +33,5 @@
   margin: 0;
   text-align: center;
   text-transform: capitalize;
+  font-family: "Exo", sans-serif;
 }
