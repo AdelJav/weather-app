@@ -107,13 +107,13 @@ export default function Weather(props) {
                 <Day1 data={weatherData} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={weatherData.town} />
+                <Forecast data={weatherData.town} forDay={1} classNr={2} />
               </div>
               <div className="card cardbody1">
-                <Day3 />
+                <Forecast data={weatherData.town} forDay={2} classNr={3} />
               </div>
               <div className="card cardbody1">
-                <Day4 />
+                <Forecast data={weatherData.town} forDay={3} classNr={4} />
               </div>
             </div>
           </div>
