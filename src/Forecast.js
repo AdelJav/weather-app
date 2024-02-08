@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Forecast.css";
 import axios from "axios";
+import Icon from "./Icon";
 
 export default function Forecast(props) {
   console.log(props);
@@ -21,7 +22,7 @@ export default function Forecast(props) {
     axios.get(requestUrl).then(dForecast);
   }, [props.data, requestUrl]);
 
-  console.log(requestUrl);
+  //console.log(requestUrl);
 
   function dForecast(response) {
     //console.log(response.data.list[0].weather[0].icon);
@@ -30,11 +31,11 @@ export default function Forecast(props) {
       temperature: response.data.list[0].main.temp,
       wind: response.data.list[0].wind.speed,
       date: new Date(response.data.list[0].dt * 1000),
-      //icon: response.data.list[0].weather[0].icon,
-      icon: `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`,
+      icon: response.data.list[0].weather[0].icon,
+      //icon: `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`,
       description: response.data.list[0].weather[0].description,
     });
-    //console.log(dataForecast.icon);
+    console.log(dataForecast.icon);
   }
 
   if (dataForecast.ready) {
@@ -44,7 +45,7 @@ export default function Forecast(props) {
       <div>
         <p className="temp2">{roundTemp}°C</p>
         <div className="picture-day2">
-          <img src={dataForecast.icon} alt="Weather icon"></img>
+          <Icon code={dataForecast.icon} size={52} />
         </div>
 
         <div className="card-body cbody">
