@@ -7,7 +7,6 @@ import Background from "./Background";
 import Backgroundsmall from "./Backgroundsmall";
 import Day1 from "./Day1";
 import Day1F from "./Day1F";
-//import Day2 from "./Day2";
 import Day3 from "./Day3";
 import Day4 from "./Day4";
 import TimeInfo from "./TimeInfo";
@@ -38,7 +37,6 @@ export default function Weather(props) {
       town: response.data.name,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
-      //icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
     });
@@ -52,7 +50,6 @@ export default function Weather(props) {
       town: response.data.name,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
-      //icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
     });
