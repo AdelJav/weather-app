@@ -1,11 +1,12 @@
 .temp2 {
   color: #7f461b;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   margin: 0;
   margin-left: 0;
   margin-top: 35px;
   text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
 .day2 {
@@ -17,7 +18,7 @@
 }
 
 .picture-day2 {
-  margin-top: 11px;
+  margin-top: 8px;
   margin-bottom: 5px;
 }
 
@@ -28,6 +29,80 @@
 }
 
 .details2 {
+  color: #7f461b;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Exo", sans-serif;
+}
+
+.temp3 {
+  color: #7f461b;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 43px;
+  text-align: center;
+}
+
+.day3 {
+  color: #7f461b;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Exo", sans-serif;
+}
+
+.picture-day3 {
+  color: #7f461b;
+  font-size: 40px;
+}
+
+.cbody {
+  height: 8px;
+  padding: 0px 16px;
+}
+
+.details3 {
+  color: #7f461b;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Exo", sans-serif;
+}
+
+.temp4 {
+  color: #7f461b;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.day4 {
+  color: #7f461b;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Exo", sans-serif;
+}
+
+.picture-day4 {
+  color: #7f461b;
+  font-size: 20px;
+}
+
+.cbody {
+  height: 8px;
+  padding: 0px 16px;
+}
+
+.details4 {
   color: #7f461b;
   font-size: 12px;
   margin: 0;

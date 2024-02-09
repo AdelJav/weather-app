@@ -14,24 +14,24 @@ import Forecast from "./Forecast";
 
 export default function Weather(props) {
   let [input, setInput] = useState(props.defaultInput);
-  let [weatherData, setWeatherData] = useState({ ready: false });
-  let [weatherDataF, setWeatherDataF] = useState({ ready: false });
+  let [weatherData, setweatherData] = useState({ ready: false });
+  let [weatherDataF, setweatherDataF] = useState({ ready: false });
 
   function convertToFahrenheit(event) {
     event.preventDefault();
-    setWeatherData({ ready: false });
+    setweatherData({ ready: false });
     searchF();
   }
 
   function convertToCelsius(event) {
     event.preventDefault();
-    setWeatherDataF({ ready: false });
+    setweatherDataF({ ready: false });
     search();
   }
 
   function setData(response) {
-    //console.log(response);
-    setWeatherData({
+    console.log(response.data.coord.lat);
+    setweatherData({
       ready: true,
       temperature: response.data.main.temp,
       town: response.data.name,
@@ -40,11 +40,12 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
     });
+    //console.log(response.weatherData.latitude);
   }
 
   function setDataF(response) {
     //console.log(response);
-    setWeatherDataF({
+    setweatherDataF({
       ready: true,
       temperature: response.data.main.temp,
       town: response.data.name,
@@ -107,13 +108,13 @@ export default function Weather(props) {
                 <Day1 data={weatherData} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={weatherData.town} forDay={1} classNr={2} />
+                <Forecast data={weatherData.town} forDay={8} classNr={2} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={weatherData.town} forDay={2} classNr={3} />
+                <Forecast data={weatherData.town} forDay={16} classNr={2} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={weatherData.town} forDay={3} classNr={4} />
+                <Forecast data={weatherData.town} forDay={24} classNr={2} />
               </div>
             </div>
           </div>
