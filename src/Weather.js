@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 import axios from "axios";
-
 import Background from "./Background";
 import Backgroundsmall from "./Backgroundsmall";
 import Day1 from "./Day1";
 import Day1F from "./Day1F";
-import Day3 from "./Day3";
-import Day4 from "./Day4";
 import TimeInfo from "./TimeInfo";
 import Forecast from "./Forecast";
+import ForecastF from "./ForecastF";
 
 export default function Weather(props) {
   let [input, setInput] = useState(props.defaultInput);
@@ -30,7 +28,6 @@ export default function Weather(props) {
   }
 
   function setData(response) {
-    console.log(response.data.coord.lat);
     setweatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -40,7 +37,6 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
     });
-    //console.log(response.weatherData.latitude);
   }
 
   function setDataF(response) {
@@ -137,9 +133,6 @@ export default function Weather(props) {
                 onChange={inputValue}
               />
               <input type="submit" value="Search" className="submitButton" />
-              <button className="current" id="current">
-                Current
-              </button>
               <span className="tempUnits">
                 Temperature in{" "}
                 <a href="`#`" onClick={convertToCelsius}>
@@ -156,13 +149,13 @@ export default function Weather(props) {
                 <Day1F data={weatherDataF} />
               </div>
               <div className="card cardbody1">
-                <Forecast data={input} />
+                <ForecastF data={weatherDataF.town} forDay={8} classNr={2} />
               </div>
               <div className="card cardbody1">
-                <Day3 />
+                <ForecastF data={weatherDataF.town} forDay={16} classNr={2} />
               </div>
               <div className="card cardbody1">
-                <Day4 />
+                <ForecastF data={weatherDataF.town} forDay={24} classNr={2} />
               </div>
             </div>
           </div>
